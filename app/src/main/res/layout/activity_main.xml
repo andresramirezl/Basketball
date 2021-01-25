@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+   <androidx.constraintlayout.widget.ConstraintLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+
+       <TextView
+           android:id="@+id/tituloLocal"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Local"
+           android:textAlignment="center"
+           android:textSize="40dp"
+           android:textStyle="bold"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.023" />
+
+       <TextView
+           android:id="@+id/tituloVisitante"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Visitante"
+           android:textAlignment="center"
+           android:textSize="40dp"
+           android:textStyle="bold"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.498"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.939" />
+
+       <TextView
+           android:id="@+id/ptsLocal"
+           android:layout_width="85dp"
+           android:layout_height="92dp"
+           android:layout_marginBottom="52dp"
+           android:text="14"
+           android:textAlignment="center"
+           android:textSize="60dp"
+           android:textStyle="bold"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.472"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.189" />
+
+       <TextView
+           android:id="@+id/ptsVisitante"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="10"
+           android:textAlignment="center"
+           android:textSize="60dp"
+           android:textStyle="bold"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.735" />
+
+       <ImageView
+           android:id="@+id/image"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.498"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.441"
+           tools:srcCompat="@tools:sample/avatars" />
+
+       <Button
+           android:id="@+id/sumarLocal1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="+1"
+           android:textSize="30dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.95"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.131" />
+
+       <Button
+           android:id="@+id/sumarLocal2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="72dp"
+           android:text="+2"
+           android:textSize="30dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.95"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.268" />
+
+       <Button
+           android:id="@+id/restarLocal1"
+           android:layout_width="80dp"
+           android:layout_height="90dp"
+           android:text="-1"
+           android:textSize="30dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.05"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.196" />
+
+       <Button
+           android:id="@+id/restart"
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:layout_marginBottom="196dp"
+           android:drawableLeft="@android:drawable/ic_menu_rotate"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.046"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.615" />
+
+       <Button
+           android:id="@+id/detalles"
+           android:layout_width="70dp"
+           android:layout_height="70dp"
+           android:drawableLeft="@android:drawable/ic_menu_add"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.953"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.432" />
+
+       <Button
+           android:id="@+id/restarVisitante1"
+           android:layout_width="80dp"
+           android:layout_height="90dp"
+           android:text="-1"
+           android:textSize="30dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.048"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.748" />
+
+       <Button
+           android:id="@+id/sumarVisitante1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="+1"
+           android:textSize="30dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.95"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.682" />
+
+       <Button
+           android:id="@+id/sumarVisitante2"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="+2"
+           android:textSize="30dp"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintEnd_toEndOf="parent"
+           app:layout_constraintHorizontal_bias="0.95"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           app:layout_constraintVertical_bias="0.792" />
+   </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>
